@@ -1,13 +1,20 @@
 /*
-  Basic HTML Javascript Setup P2
-  - install lodash
-    > docs > cdn copies
-    > after setup, go to network tab > we will see lodash.js though we don't use it 
-
+  Basic HTML Javascript Setup P3
+  - add ul in html
 
 */
 
 function buttonClick() {
   const element = document.querySelector('#header')
   element.textContent = 'Code is updated!!!'
+
+  // (***)
+  const listItems = ['apple', 'orange', 'banana']
+  const ul = document.querySelector('#shopping-list')
+
+  _.forEach(listItems, (item) => {
+    const newEl = document.createElement('li')
+    newEl.textContent = item
+    ul.append(newEl)
+  })
 }
