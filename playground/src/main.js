@@ -1,16 +1,17 @@
 /*
-  CommonJS modules P3
-  - create index.js
-    > avoid import multiple lines in main.js
+  ES6 Modules P1
+  - check functions/ 
+    
+  (***) need to set type=module in package.json + when import: we need to have .js extension
 
 */
 
-// (***) alias
-const { add: addNumbers, addAndMultiply, subtract } = require('./functions')
-
-// (***) in case we have the same function in main.js > we can use alias
-function add() {}
+import {
+  add as addNumbers,
+  addAndMultiply,
+  subtract,
+} from './functions/index.js'
 
 console.log(addNumbers(2, 3))
 console.log(subtract(2, 3))
-console.log(addAndMultiply(2, 3, 4)) // 20
+console.log(addAndMultiply(2, 3, 4))

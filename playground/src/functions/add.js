@@ -6,8 +6,4 @@ function addAndMultiply(a, b, c) {
   return (a + b) * c
 }
 
-// (***) named export
-module.exports = {
-  add: add,
-  addAndMultiply,
-}
+export { add, addAndMultiply }
