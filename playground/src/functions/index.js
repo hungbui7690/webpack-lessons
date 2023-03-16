@@ -1,4 +1,4 @@
-import { add, addAndMultiply } from './add.js'
-import subtract from './subtract.js'
+import { add, addAndMultiply } from './add'
+import subtract from './subtract'
 
 export { add, addAndMultiply, subtract }
