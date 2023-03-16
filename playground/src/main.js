@@ -1,16 +1,16 @@
 /*
-  CommonJS modules P2
-  - export multiple functions in a file > add.js
-    > to export multiple things > use named export
-  
+  CommonJS modules P3
+  - create index.js
+    > avoid import multiple lines in main.js
 
 */
 
-const subtract = require('./functions/subtract')
+// (***) alias
+const { add: addNumbers, addAndMultiply, subtract } = require('./functions')
 
-// (***)
-const { add, addAndMultiply } = require('./functions/add')
+// (***) in case we have the same function in main.js > we can use alias
+function add() {}
 
-console.log(add(2, 3))
+console.log(addNumbers(2, 3))
 console.log(subtract(2, 3))
 console.log(addAndMultiply(2, 3, 4)) // 20
