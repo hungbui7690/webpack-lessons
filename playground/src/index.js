@@ -1,31 +1,20 @@
 /*
-  Adding webpack configuration
-  > npm init -y
-  > npm install --save-dev webpack webpack-cli
-  > npm install lodash
-
-  - create webpack.config.js + setup
-  - config build command in package.json
-  - npm run build
-    > create folder dist/bundle.js
-  - point javascript file to bundle.js in html file
-
-  (***)
-  => now, in network tab > instead of loading index.js + lodash > it just loads bundle.js
-  => but the button click does not work > next lesson
+  Fixing our button click
+  - check bundle.js > we can see from those first lines that webpack create the IIFE (Immediately Invoked Function Expression)
+    > it creates it own IIFE function to prevent duplication name
+    > IIFE function has its own scope > html code cannot access directly 
+      > we cannot call the function directly from HTML > so, we have to select from the javascript
 
 
-  (***)
-  > "build": "webpack --config webpack.config.js"
-    > using config file === webpack.config.js
-  > "build": "webpack --config webpack.config.js --mode development"
-    > code will be easy to read 
+  (***) remember to build every time we change the code
 */
 
-// (***) remove import lodash from html file
 import _ from 'lodash'
 
-function buttonClick() {
+// (***)
+const btn = document.querySelector('#btn')
+
+btn.addEventListener('click', () => {
   const element = document.querySelector('#header')
   element.textContent = 'Code is updated!!!'
 
@@ -37,4 +26,4 @@ function buttonClick() {
     newEl.textContent = item
     ul.append(newEl)
   })
-}
+})
