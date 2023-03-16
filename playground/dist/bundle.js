@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/index.js */ \"./src/functions/index.js\");\n/*\r\n  ES6 Modules P1\r\n  - if we don't want to add type=module + need to have extension when import > use webpack config \r\n    > bts, in react, webpack does this for us, so we don't have to have the extension .js\r\n\r\n    \r\n\r\n*/\r\n\r\n\r\n\r\nconsole.log((0,_functions_index_js__WEBPACK_IMPORTED_MODULE_0__.add)(2, 3))\r\nconsole.log((0,_functions_index_js__WEBPACK_IMPORTED_MODULE_0__.subtract)(2, 3))\r\nconsole.log((0,_functions_index_js__WEBPACK_IMPORTED_MODULE_0__.addAndMultiply)(2, 3, 4))\r\n\n\n//# sourceURL=webpack://playground/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./src/functions/index.js\");\n/*\r\n  ES6 Modules P3\r\n  \r\n\r\n*/\r\n\r\n\r\n\r\nconsole.log(_functions__WEBPACK_IMPORTED_MODULE_0__.add(2, 3))\r\nconsole.log(_functions__WEBPACK_IMPORTED_MODULE_0__.subtract(2, 3))\r\nconsole.log(_functions__WEBPACK_IMPORTED_MODULE_0__.addAndMultiply(2, 3, 4))\r\n\n\n//# sourceURL=webpack://playground/./src/main.js?");
 
 /***/ })
 
