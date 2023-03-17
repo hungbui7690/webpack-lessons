@@ -1,33 +1,15 @@
 /*
-  Intro
-  - js
-  - css
-  - images
-  - fonts
+  CSS loaders P2
+  - create clearButton.js
+  - import
+  - add button css to both buttons
 
-  What
-  > pic
-
-/////////////////////////////////
-
-  CSS loaders P1
-  - create index.css 
-  - use in index.js (not import in html file)
-
-    > now if we build > error
-      > fix in config file
-
-
-  (***) loaders are not built in with webpack > need to install 
-  > npm i --save-dev css-loader style-loader
-  > style-loader: take the code that is processed by css-loader than load into html 
-
-  > after done, inspect html > style tag
 
 */
 
-import './index.css'
 import _ from 'lodash'
+import './index.css'
+import './clearButton' // (***)
 
 const btn = document.querySelector('#btn')
 

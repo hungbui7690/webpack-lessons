@@ -2,3 +2,12 @@
   text-decoration: underline;
   color: crimson;
 }
+
+/* (***) */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  background-color: crimson;
+  border: none;
+}
