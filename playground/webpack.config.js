@@ -12,20 +12,23 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 
+  // (***)
+  devServer: {
+    static: './dist',
+  },
+
   plugins: [
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
       chunks: ['index'],
       inject: true,
-      filename: 'index.html', // (***)
+      filename: 'index.html',
     }),
-
-    // (***) err > we have to specify filename
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/products.html'),
       chunks: ['products'],
       inject: true,
-      filename: 'products.html', // (***)
+      filename: 'products.html',
     }),
   ],
 }

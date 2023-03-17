@@ -1,9 +1,12 @@
 /*
-  Fixing our broken page
-  - fix it properly in upcoming section
-  - now, we fix manually
-    > copy index.css + products.css into dist folder 
-    > copy assets folder to dist folder
+  Automated Reloading Dev Server P1
+  - because we use Live Server, it makes the hot reloading for us > but if we open the index.html without live server, every time we make a change, we need to refresh to see the change
+
+  > npm install --save-dev webpack-dev-server
+
+  - webpack.config.js
+  - package.json
+    > "dev": "webpack serve --mode development --open",
 
 */
 
