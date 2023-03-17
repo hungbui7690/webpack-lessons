@@ -1,12 +1,7 @@
 /*
-  Multiple Entry Bundle P2
-  - create webpack.config.js
-
-
-
-  
-  (***) normally, when we work with react > single page app > just have 1 entry > we don't need to do this > this just works with javascript projects
-
+  Multiple Entry Bundle P3
+  - webpack.config.js
+    > after done, the data is still not loaded > reason: because we don't add script tag in html files > fix in next lecture
 
 */
 

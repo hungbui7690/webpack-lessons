@@ -2,11 +2,11 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js', // entry 1
-    product: './src/products.js', // entry 2
+    index: './src/index.js',
+    product: './src/products.js',
   },
   output: {
-    filename: 'bundle.js', // error > since we have 2 entry files
+    filename: '[name]bundle.js', // (***)
     path: path.resolve(__dirname, 'dist'),
   },
 }
