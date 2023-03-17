@@ -1,9 +1,9 @@
 /*
-  Fonts loaders P1
-  - google fonts > download font > put under assets folder
-  - index.css
-  - index.js
-    > err
+  Fonts loaders P2
+  - webpack config
+  - fix in index.css > use global style
+
+  >>> Images + Fonts are built in of Webpack
 
 */
 
@@ -20,14 +20,13 @@ logo.src = webpackLogo
 
 const btn = document.querySelector('#btn')
 btn.classList.add('btn')
-console.log('abc')
 
 btn.addEventListener('click', () => {
   const element = document.querySelector('#header')
   element.textContent = 'Code is updated!!!'
 
   // (***)
-  element.classList.add(['font'])
+  element.classList.add('font')
 
   const listItems = ['apple', 'orange', 'banana']
   const ul = document.querySelector('#shopping-list')

@@ -3,9 +3,10 @@
   color: crimson;
 }
 
-/* Font */
-.font {
+/* (***) */
+:global(.font) {
   font-family: 'Redressed', cursive;
+  font-size: xx-large;
 }
 
 img {
