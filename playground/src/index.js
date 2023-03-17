@@ -5,6 +5,8 @@
 
   >>> Images + Fonts are built in of Webpack
 
+  (***) more info about asset modules > pic
+
 */
 
 import _ from 'lodash'
