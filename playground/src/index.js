@@ -1,9 +1,11 @@
 /*
-  Intro 
+  Multiple Entry Bundle P2
+  - create webpack.config.js
 
-  Multiple Entry Bundle P1
-  - pic
-  - right now, cannot display data from json files on the screen
+
+
+  
+  (***) normally, when we work with react > single page app > just have 1 entry > we don't need to do this > this just works with javascript projects
 
 
 */
