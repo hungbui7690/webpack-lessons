@@ -5,10 +5,8 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-
-    // (***) image will be created in this folder
     assetModuleFilename: 'images/[hash][ext]',
-    clean: true, // remove unused images
+    clean: true,
   },
   module: {
     rules: [

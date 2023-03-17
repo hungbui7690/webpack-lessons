@@ -1,15 +1,19 @@
 /*
-  Loading images in JS P3
-  - we can add something in config
-
-
+  Fonts loaders P1
+  - google fonts > download font > put under assets folder
+  - index.css
+  - index.js
+    > err
 
 */
 
 import _ from 'lodash'
-import './index.scss'
+import './index.css'
 import './clearButton'
 import webpackLogo from './assets/logo.png'
+
+// (***)
+import './assets/fonts/Redressed-Regular.ttf'
 
 const logo = document.querySelector('#logo')
 logo.src = webpackLogo
@@ -21,6 +25,9 @@ console.log('abc')
 btn.addEventListener('click', () => {
   const element = document.querySelector('#header')
   element.textContent = 'Code is updated!!!'
+
+  // (***)
+  element.classList.add(['font'])
 
   const listItems = ['apple', 'orange', 'banana']
   const ul = document.querySelector('#shopping-list')

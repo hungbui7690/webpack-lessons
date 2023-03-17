@@ -3,6 +3,11 @@
   color: crimson;
 }
 
+/* Font */
+.font {
+  font-family: 'Redressed', cursive;
+}
+
 img {
   width: 100px;
   object-fit: cover;
