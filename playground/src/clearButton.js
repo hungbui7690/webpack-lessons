@@ -1,7 +1,8 @@
+// (***)
+import './clearButton.css'
+
 const clearBtn = document.createElement('button')
 clearBtn.innerHTML = 'Clear'
-
-// (***)
 clearBtn.classList.add('btn')
 
 document.body.appendChild(clearBtn)

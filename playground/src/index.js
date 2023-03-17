@@ -1,9 +1,10 @@
 /*
-  CSS loaders P2
-  - create clearButton.js
-  - import
-  - add button css to both buttons
+  CSS loaders P3
+  - the problem appears when we create clearButton.css
+    > now, both buttons become green
+    > if we inspect, we will see the green style tag is right below > higher specificity
 
+  > this is the time when we need to use css-module
 
 */
 
