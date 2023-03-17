@@ -10,7 +10,11 @@ module.exports = {
     rules: [
       {
         test: /.css$/,
-        use: ['style-loader', 'css-loader'],
+        // (***) the important thing is "options"
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader', options: { modules: true } },
+        ],
       },
     ],
   },

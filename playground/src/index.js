@@ -1,10 +1,7 @@
 /*
-  CSS loaders P3
-  - the problem appears when we create clearButton.css
-    > now, both buttons become green
-    > if we inspect, we will see the green style tag is right below > higher specificity
-
-  > this is the time when we need to use css-module
+  CSS loaders P4
+  - config
+    > after config > lost all styles > inspect: we will see the class name has changed
 
 */
 
