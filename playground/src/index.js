@@ -1,8 +1,6 @@
 /*
-  Using HTML Webpack plugin P2
-  - config
-    > after build, if we see the old html file > delete + rebuild 
-
+  Using HTML Webpack plugin P3
+  - go to index.html and remove script tag > build: then we see the script tag is added automatically
 
 */
 
