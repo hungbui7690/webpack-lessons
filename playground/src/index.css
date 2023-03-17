@@ -3,7 +3,7 @@
   color: crimson;
 }
 
-.btn {
+:global(.btn) {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   color: white;

@@ -1,18 +1,22 @@
 /*
-  CSS loaders P5
-  - import style 
-    > then use in clearButton.js and index.js
+  CSS loaders P6
+  - global style
+    > index.css
+    > clearButton.js
+    > index.js
+
+  (***) Learn More: https://github.com/css-modules/css-modules
 
 */
 
 import _ from 'lodash'
 
-// (***)
-import style from './index.css'
+import './index.css' // (***) need to import
 import './clearButton'
 
 const btn = document.querySelector('#btn')
-btn.classList.add([style.btn]) // (***)
+btn.classList.add('btn') // (***)
+console.log('abc')
 
 btn.addEventListener('click', () => {
   const element = document.querySelector('#header')
