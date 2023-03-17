@@ -1,6 +1,7 @@
 /*
-  Using HTML Webpack plugin P3
-  - go to index.html and remove script tag > build: then we see the script tag is added automatically
+  Using HTML Webpack plugin P4
+  - config
+    > after done, if we open dist/index.html > we lost all css > next lecture
 
 */
 

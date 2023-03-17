@@ -1,6 +1,5 @@
 const path = require('path')
 
-// (***)
 const htmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -13,12 +12,20 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 
-  // (***) add options: chunks === list of dependency
   plugins: [
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
-      chunks: ['index'], // depends on entry index
-      inject: true, // inject from entry index to this new file
+      chunks: ['index'],
+      inject: true,
+      filename: 'index.html', // (***)
+    }),
+
+    // (***) err > we have to specify filename
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src/products.html'),
+      chunks: ['products'],
+      inject: true,
+      filename: 'products.html', // (***)
     }),
   ],
 }
