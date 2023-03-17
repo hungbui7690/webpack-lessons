@@ -1,8 +1,8 @@
-import './index.css' // (***) need to import
+import style from './clearButton.scss'
 
 const clearBtn = document.createElement('button')
 clearBtn.innerHTML = 'Clear'
-clearBtn.classList.add(['btn']) // (***) using global style
+clearBtn.classList.add([style.btn])
 
 document.body.appendChild(clearBtn)
 
