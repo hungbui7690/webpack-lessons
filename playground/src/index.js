@@ -1,7 +1,6 @@
 /*
-  Multiple Entry Bundle P3
-  - webpack.config.js
-    > after done, the data is still not loaded > reason: because we don't add script tag in html files > fix in next lecture
+  Multiple Entry Bundle P4
+  - add script tag in both html files > both needs to point to bundle.js
 
 */
 
