@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -13,7 +13,7 @@ body {
       rgba(123, 90, 50, 0.036),
       rgba(114, 114, 110, 0.324)
     ),
-    url('./assets/bakery-wallpaper.jpeg');
+    url("./assets/bakery-wallpaper.jpeg");
 
   background-size: cover;
   background-position: top;
@@ -74,7 +74,7 @@ body {
   color: grey;
   border: 1px dashed lightgrey;
   padding: 5px;
-  margin: 10px;
+	margin: 10px;
 }
 
 .cakes-container img {

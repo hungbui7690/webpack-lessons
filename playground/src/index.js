@@ -1,7 +1,9 @@
 /*
-  Using HTML Webpack plugin P4
-  - config
-    > after done, if we open dist/index.html > we lost all css > next lecture
+  Fixing our broken page
+  - fix it properly in upcoming section
+  - now, we fix manually
+    > copy index.css + products.css into dist folder 
+    > copy assets folder to dist folder
 
 */
 
