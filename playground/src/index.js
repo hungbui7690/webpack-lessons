@@ -1,18 +1,16 @@
 /*
-  Loading images in JS P2
-  - setup config
-  - when finish, check dist folder > we can see that image is there with diff name 
+  Loading images in JS P3
+  - we can add something in config
+
+
 
 */
 
 import _ from 'lodash'
 import './index.scss'
 import './clearButton'
-
-// (***)
 import webpackLogo from './assets/logo.png'
 
-// (***) we can also add style (check index.scss)
 const logo = document.querySelector('#logo')
 logo.src = webpackLogo
 
