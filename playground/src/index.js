@@ -1,34 +1,25 @@
 /*
-  SCSS Loaders
-  - rename both css files to scss
-    > after build, every works fine 
-    
-  - clearButton.scss: use scss features > variables
-    > build == err
-
-  > we need to install:
-    + instructor: npm i --save-dev scss-loader sass > not work 
-    + we need to install one more package: 
-      > npm install sass-loader
-
-  > then config 
-  
-  (***) https://regexr.com/
-  - /.css/g === index.css === index.scss
-  - /\.(css)/g === index.css !== index.scss
-  > pic
+  Loading images in JS P1
+  - there are some loaders that we need to install for webpack to know how it works 
+  - but there are some built in loaders as well
 
 
-  > in the config > we define the rules for css and scss > work on both: if we change the name from index.scss to css > it will work normally
-
-  (***) the problem with this setup is that when we inspect, we don't see the style of scss in the <head>
+  Steps: 
+  - create img tag in html file
+  - go to index.js and import 
+    > err
+    > fix in next lecture
 
 */
 
 import _ from 'lodash'
-
 import './index.scss'
 import './clearButton'
+
+// (***)
+import logo from './assets/logo.png'
+const logo = document.querySelector('#logo')
+logo.src = logo
 
 const btn = document.querySelector('#btn')
 btn.classList.add('btn')
