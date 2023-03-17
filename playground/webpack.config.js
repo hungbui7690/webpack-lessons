@@ -9,15 +9,12 @@ module.exports = {
   module: {
     rules: [
       {
-        // (***) put the regex here
         test: /\.(css)$/,
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader', options: { modules: true } },
         ],
       },
-
-      // (***)
       {
         test: /.s[ac]ss$/,
         use: [
@@ -25,6 +22,11 @@ module.exports = {
           { loader: 'css-loader', options: { modules: true } },
           { loader: 'sass-loader' },
         ],
+      },
+      // (***)
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },

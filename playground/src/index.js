@@ -1,14 +1,7 @@
 /*
-  Loading images in JS P1
-  - there are some loaders that we need to install for webpack to know how it works 
-  - but there are some built in loaders as well
-
-
-  Steps: 
-  - create img tag in html file
-  - go to index.js and import 
-    > err
-    > fix in next lecture
+  Loading images in JS P2
+  - setup config
+  - when finish, check dist folder > we can see that image is there with diff name 
 
 */
 
@@ -17,9 +10,11 @@ import './index.scss'
 import './clearButton'
 
 // (***)
-import logo from './assets/logo.png'
+import webpackLogo from './assets/logo.png'
+
+// (***) we can also add style (check index.scss)
 const logo = document.querySelector('#logo')
-logo.src = logo
+logo.src = webpackLogo
 
 const btn = document.querySelector('#btn')
 btn.classList.add('btn')
