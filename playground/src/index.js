@@ -1,6 +1,21 @@
 /*
-  Multiple Entry Bundle P4
-  - add script tag in both html files > both needs to point to bundle.js
+  What are plugins
+  - pic
+    + html webpack plugin: inject all dep directly into html file > we don't have to manually add script tag 
+    + environment plugin: dev/production env > help setup env var 
+    + html minimizer plugin: make the file smaller for production 
+    + mini css extract plugin: last chapter, we have to import index.css into index.js > not good for caching since every time we call that file, we need to extract that css file 
+      > this plugin will help to fix it > helps to create bundle.css
+
+//////////////////////////////////////////////
+
+  Using HTML Webpack plugin P1
+  - the concept is similar to loaders > we need to install from npm
+    > npm install --save-dev html-webpack-plugin 
+  - config
+  - check dist > create html file without markup
+    > fix in next lecture
+
 
 */
 
