@@ -1,12 +1,8 @@
 /*
-  Automated Reloading Dev Server P1
-  - because we use Live Server, it makes the hot reloading for us > but if we open the index.html without live server, every time we make a change, we need to refresh to see the change
+  Automated Reloading Dev Server P2
+  - add new product in products.json
+  - fix webpack config to load all products
 
-  > npm install --save-dev webpack-dev-server
-
-  - webpack.config.js
-  - package.json
-    > "dev": "webpack serve --mode development --open",
 
 */
 

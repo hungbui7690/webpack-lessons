@@ -26,7 +26,7 @@ module.exports = {
     }),
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/products.html'),
-      chunks: ['products'],
+      chunks: ['product'], // (***) this will point to entry above (before: "products")
       inject: true,
       filename: 'products.html',
     }),
