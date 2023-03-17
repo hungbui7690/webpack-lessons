@@ -1,15 +1,18 @@
 /*
-  CSS loaders P4
-  - config
-    > after config > lost all styles > inspect: we will see the class name has changed
+  CSS loaders P5
+  - import style 
+    > then use in clearButton.js and index.js
 
 */
 
 import _ from 'lodash'
-import './index.css'
-import './clearButton' // (***)
+
+// (***)
+import style from './index.css'
+import './clearButton'
 
 const btn = document.querySelector('#btn')
+btn.classList.add([style.btn]) // (***)
 
 btn.addEventListener('click', () => {
   const element = document.querySelector('#header')

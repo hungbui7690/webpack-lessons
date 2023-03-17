@@ -10,7 +10,6 @@ module.exports = {
     rules: [
       {
         test: /.css$/,
-        // (***) the important thing is "options"
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader', options: { modules: true } },

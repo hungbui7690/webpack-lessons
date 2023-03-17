@@ -1,9 +1,8 @@
-// (***)
-import './clearButton.css'
+import style from './clearButton.css' // (***)
 
 const clearBtn = document.createElement('button')
 clearBtn.innerHTML = 'Clear'
-clearBtn.classList.add('btn')
+clearBtn.classList.add([style.btn]) // (***)
 
 document.body.appendChild(clearBtn)
 
