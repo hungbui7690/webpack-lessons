@@ -13,6 +13,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 
-  // (***) without options > no err > check dist/index.html
-  plugins: [new htmlWebpackPlugin({})],
+  // (***) add options: chunks === list of dependency
+  plugins: [
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src/index.html'),
+      chunks: ['index'], // depends on entry index
+      inject: true, // inject from entry index to this new file
+    }),
+  ],
 }
